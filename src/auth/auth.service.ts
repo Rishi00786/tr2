@@ -39,7 +39,7 @@ export class AuthService {
     response.cookie('Authentication', access_token, {
       secure: true,
       httpOnly: true,
-      sameSite: 'strict',
+      sameSite: 'none',
       expires,
     });
 
